@@ -1,0 +1,36 @@
+[2024-07-14T21:12:57.886+0900] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: dags_bash_operator.bash_t1 manual__2024-07-14T12:12:55.119017+00:00 [queued]>
+[2024-07-14T21:12:57.896+0900] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: dags_bash_operator.bash_t1 manual__2024-07-14T12:12:55.119017+00:00 [queued]>
+[2024-07-14T21:12:57.903+0900] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2024-07-14T21:12:57.903+0900] {taskinstance.py:1369} INFO - Starting attempt 1 of 1
+[2024-07-14T21:12:57.903+0900] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2024-07-14T21:12:57.914+0900] {taskinstance.py:1389} INFO - Executing <Task(BashOperator): bash_t1> on 2024-07-14 12:12:55.119017+00:00
+[2024-07-14T21:12:57.926+0900] {standard_task_runner.py:52} INFO - Started process 30027 to run task
+[2024-07-14T21:12:57.933+0900] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'dags_bash_operator', 'bash_t1', 'manual__2024-07-14T12:12:55.119017+00:00', '--job-id', '17', '--raw', '--subdir', 'DAGS_FOLDER/printExample.py', '--cfg-path', '/var/folders/s3/qf7_0f3s7137frvkybd7gfqh0000gn/T/tmpei5jh2td', '--error-file', '/var/folders/s3/qf7_0f3s7137frvkybd7gfqh0000gn/T/tmprbpu1ner']
+[2024-07-14T21:12:57.934+0900] {standard_task_runner.py:80} INFO - Job 17: Subtask bash_t1
+[2024-07-14T21:12:57.971+0900] {task_command.py:371} INFO - Running <TaskInstance: dags_bash_operator.bash_t1 manual__2024-07-14T12:12:55.119017+00:00 [running]> on host 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2024-07-14T21:12:58.006+0900] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=dags_bash_operator
+AIRFLOW_CTX_TASK_ID=bash_t1
+AIRFLOW_CTX_EXECUTION_DATE=2024-07-14T12:12:55.119017+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-07-14T12:12:55.119017+00:00
+[2024-07-14T21:12:58.007+0900] {subprocess.py:62} INFO - Tmp dir root location: 
+ /var/folders/s3/qf7_0f3s7137frvkybd7gfqh0000gn/T
+[2024-07-14T21:12:58.008+0900] {subprocess.py:74} INFO - Running command: ['/bin/bash', '-c', 'python3 /Users/jongwoom1pro/Coding/개인프로젝트/printJW.py']
+[2024-07-14T21:12:58.020+0900] {subprocess.py:85} INFO - Output:
+[2024-07-14T21:12:58.052+0900] {subprocess.py:92} INFO - 나는 종우다
+[2024-07-14T21:12:58.053+0900] {subprocess.py:92} INFO - 나는 종우다
+[2024-07-14T21:12:58.053+0900] {subprocess.py:92} INFO - 나는 종우다
+[2024-07-14T21:12:58.053+0900] {subprocess.py:92} INFO - 나는 종우다
+[2024-07-14T21:12:58.053+0900] {subprocess.py:92} INFO - 나는 종우다
+[2024-07-14T21:12:58.053+0900] {subprocess.py:92} INFO - 나는 종우다
+[2024-07-14T21:12:58.054+0900] {subprocess.py:92} INFO - 나는 종우다
+[2024-07-14T21:12:58.054+0900] {subprocess.py:92} INFO - 나는 종우다
+[2024-07-14T21:12:58.054+0900] {subprocess.py:92} INFO - 나는 종우다
+[2024-07-14T21:12:58.055+0900] {subprocess.py:96} INFO - Command exited with return code 0
+[2024-07-14T21:12:58.072+0900] {taskinstance.py:1412} INFO - Marking task as SUCCESS. dag_id=dags_bash_operator, task_id=bash_t1, execution_date=20240714T121255, start_date=20240714T121257, end_date=20240714T121258
+[2024-07-14T21:12:58.123+0900] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-07-14T21:12:58.146+0900] {local_task_job.py:279} INFO - 1 downstream tasks scheduled from follow-on schedule check
